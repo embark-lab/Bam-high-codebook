@@ -396,8 +396,10 @@ different situations where one could consider their femininity and
 masculinity. 25% or less missing data)
 
 ## Fat Stereotypes Questionnaire (FSQ)
+Davison and Birch (20014) developed the Fat Stereotype Questionnaire (FSQ) to assess fat stereotypes among 9 year old girls. This scale asks participants to think about attributes such as happiness, intelligence, attractiveness, laziness, having a lot of friends, and goodness/badness in relation to fatness and thinness. 
 
 **Scoring**
+Participants respond to prompts that are descriptors of both “thin” and “fat” people as the subject. They respond using a four-point Likert scale, which ranges from “really disagree” to “really agree,” which produces 18 scores (9 of which are with “fat” subjects and 9 of which are with “thin” subjects). Scoring is completed by calculating discrepancy scores (fat people attribute - thin people attribute) and calculating the mean of the 9 discrepancy scores. Scores above 0 indicate that the participant more strongly endorses that attribute for thin people, whereas scores below 0 indicate that the participant more strongly endorses that attribute for fat people. Importantly, before calculating the mean score, the attributes need to be reverse coded in order to interpret all values in the same direction.  The internal consistency for this measure in Davison and Birch’s (2014) sample was ɑ = 0.71.
 
 **Key Variables**
 
