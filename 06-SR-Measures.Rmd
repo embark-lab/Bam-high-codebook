@@ -192,24 +192,16 @@ fat phobia levels in the tested population through various personality
 traits and whether there is bias when people apply them to an overweight
 person (@baconFatPhobiaScale2001). The shortened FPS questionnaire
 demonstrates high reliability when compared to the original 50 question
-scale. The FPS uses a 5-point sliding scale with 1 being equal to a
-different negative descriptive variable for each respective question and
-5 being equal to a different positive variable for each respective
-question. Some items are reverse scored prior to data aggregation such
-that th 1 (negative) to 5 (positive) valuation is maintained across the
 scale.
 
 **Scoring**
 
-Data Cleaning includes:
-
-**1-2.** Selecting and renaming variables to include descriptive terms
-from questions in the scale.
-
-**3.** Coding all items such that the negative descriptor is labeled as
-1 and the positive descriptor is labeled as 5.
-
-**4.** Computing a mean score using all 14-items
+The FPS uses a 5-point sliding scale with 1 being equal to a different
+negative descriptive variable for each respective question and 5 being
+equal to a different positive variable for each respective question.
+Some items are reverse scored prior to data aggregation such that th 1
+(negative) to 5 (positive) valuation is maintained across the scale. A
+mean score is created from the 14 items.
 
 **Key Variables**
 
@@ -232,6 +224,8 @@ interpreting findings from this measure in our young adult sample.
 however, at present, there is no alternative measure of FI amongst
 college students with a more robust track-record of validity.
 
+**Scoring**
+
 Responses of "yes," "often," "sometimes," "almost every month," and
 "some months but not every month" are coded as affirmative. The sum of
 affirmative responses to the 10 questions in the Adult Food Security
@@ -243,20 +237,6 @@ food security \| - Raw score 1-2: Marginal food security \| - Raw score
 \|When dichotomizing, the food security status of the first two
 categories in combination is described as food secure and the latter two
 as food insecure.
-
-**Scoring**
-
-Data cleaning includes:
-
-**1-2.** Select and rename variables to include numbering of questions
-in the scale and name of scale being utilized
-
-**3.** Recode scores in accordance with recommendations (noted above)
-
-**4.** Create sum scores for dichotomized questions - `fssm_total`, and
-average of frequency items `fssm_average_freq`.
-
-**5.** Create Food Security Status variable - as outlined above
 
 **Key Variables**
 
