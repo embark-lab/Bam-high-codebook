@@ -319,8 +319,10 @@ number of items completed
 ## Mini Menstrual Questionnaire (MMQ)
 
 ## Scale of Subjective Social Status (SSSS)
+The MacArthur Scale of Subjective Social Status - Youth Version measures perceived social status among adolescents between 7th and 12th grade (Goodman et al., 2001). The measure includes two ladders: one to assess perceived family status in US American Society and the other to assess perceived personal status within one’s school community. 
 
 **Scoring**
+Each of the two ladders has 10 rungs that the participants can place themselves on. The top rung represents the people who are “best off” in US American society (described as having the most money, highest amount of schooling, and jobs that bring the most respect) in the first ladder and the people in school with the highest status (described as highest grades, standing, and most respect) in the second ladder. Higher scores (with a 10 being the highest) represent higher perceived social status in each setting. 
 
 **Key Variables**
 
