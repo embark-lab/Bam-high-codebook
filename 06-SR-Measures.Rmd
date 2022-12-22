@@ -317,6 +317,7 @@ number of items completed
 `gffs_loc_25` (sum of loss of control items)
 
 ## Mini Menstrual Questionnaire (MMQ)
+The Mini Menstrual Questionnaire, or MMQ, is a tool that the EMBARK Lab created to assess menstruating individuals’ menstrual history and current menstrual status. This measure asks only three questions: (1) what the participant’s sex assigned at birth is (2) the estimated start date of the participant’s last or current period (3) the number of menstrual cycles the participant has experienced in the past month. 
 
 ## Scale of Subjective Social Status (SSSS)
 The MacArthur Scale of Subjective Social Status - Youth Version measures perceived social status among adolescents between 7th and 12th grade (Goodman et al., 2001). The measure includes two ladders: one to assess perceived family status in US American Society and the other to assess perceived personal status within one’s school community. 
