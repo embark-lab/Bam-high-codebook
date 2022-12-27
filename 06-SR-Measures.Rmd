@@ -1,113 +1,66 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Self-Report Measures
 
 ## Demographics
 
-Demographics captured in the current study include: Race, Sexual
-Orientation, Gender, Ethnicity, Student Status, Working Status, Current
-Living Situation, Assessment Date, and Age
+Demographics captured in the current study include: Race, Sexual Orientation, Gender, Ethnicity, Student Status, Working Status, Current Living Situation, Assessment Date, and Age
 
 **Scoring**
 
-Demographics are primarily drawn from the data collection form (measure
-prefix 'dcf'). Cleaning steps include:
+Demographics are primarily drawn from the data collection form (measure prefix 'dcf'). Cleaning steps include:
 
-1.  Selection of variables that are part of the data collection form
-    (prefix 'dcf') and winnow variables to be included in the master
-    dataset.
+1.  Selection of variables that are part of the data collection form (prefix 'dcf') and winnow variables to be included in the master dataset.
 
-2.  Calculation of age in years and remove birthdate (HIPPA Identifier)
-    from the data set.
+2.  Calculation of age in years and remove birthdate (HIPPA Identifier) from the data set.
 
-3.  Changing assessment date to only capture month and year of
-    assessment for further de-identification.
+3.  Changing assessment date to only capture month and year of assessment for further de-identification.
 
-4.  Binning categorical variables to response options most appropriate
-    for race and ethnicity
+4.  Binning categorical variables to response options most appropriate for race and ethnicity
 
 **Key Variables**
 
 `age` (Participant Age in Years)
 
-`race` (Participant Race, recoded to: White[0], Black[1], Asian[2],
-Mixed Race/Other[3])
+`race` (Participant Race, recoded to: White[0], Black[1], Asian[2], Mixed Race/Other[3])
 
 `ethnicity` (Hispanic[1] or non-Hispanic[0])
 
-`race_eth_1` (Race and ethnicity recoded to: White[0], Non-Hispanic
-Black [1], Non-Hispanic Asian [2], Hispanic [3], Mixed/Other [4])
+`race_eth_1` (Race and ethnicity recoded to: White[0], Non-Hispanic Black [1], Non-Hispanic Asian [2], Hispanic [3], Mixed/Other [4])
 
-`race_eth_2` (Race and ethnicity recoded to: White [0], Asian [1], Other
-[2])
+`race_eth_2` (Race and ethnicity recoded to: White [0], Asian [1], Other [2])
 
-`sex_orientation` (Participant sexual orientation, recoded to:
-Heterosexual [0], Bi/Pansexual [1], Gay/Lesbian [2])
+`sex_orientation` (Participant sexual orientation, recoded to: Heterosexual [0], Bi/Pansexual [1], Gay/Lesbian [2])
 
-`sex_minority` (Participant sexual orientation recoded to
-Hetersoxesual[0] or Sexual Minority[1])
+`sex_minority` (Participant sexual orientation recoded to Hetersoxesual[0] or Sexual Minority[1])
 
-`gender` (Participant gender identity recoded to Male[0], Female [1],
-NonBinary/Other[2])
+`gender` (Participant gender identity recoded to Male[0], Female [1], NonBinary/Other[2])
 
-`gender_TNB` (Participant gender identity recoded to: Cisgender [0] or
-Trans/Nonbinary [1])
+`gender_TNB` (Participant gender identity recoded to: Cisgender [0] or Trans/Nonbinary [1])
 
-`gender_female_nb` (Participant gender identity coded to Male = 0 and
-Female/Nonbinary = 1)
+`gender_female_nb` (Participant gender identity coded to Male = 0 and Female/Nonbinary = 1)
 
-`sex_gender_minority` (Participant sexual and gender identity coded to
-CisHet [0] or Sexual/Gender Minority [1])
+`sex_gender_minority` (Participant sexual and gender identity coded to CisHet [0] or Sexual/Gender Minority [1])
 
 `assessment_month` (assessment recoded to assessment month and year)
 
 ## ED100k
 
-ED100K.V3 questionnaire is a self-report, ED assessment based on the
-Structured Clinical Interview for DSM-5, Eating
-Disorders[@thorntonAnorexiaNervosaGenetics2018]. Items assess DSM-5
-criteria for AN, BN, BED, and other specified feeding and eating
-disorders (OSFED). The ED100K-V1 was found to be a valid measure of
-eating disorders and eating disorder behaviors. Positive predictive
-values for AN Criterion B, Criterion C, and binge eating ranged from 88
-to 100% in the validation sample. Among women who had a negative screen,
-the probability of not having these criteria or behaviors ranged from 72
-to 100% in the validation sample. The correlation between questionnaire
-and interview for lowest illness-related BMI was 0.91. Overall, the
-questionnaire captures historical: eating disorder diagnosis, eating
-disorder symptoms, eating disorder course of illness, and diagnostic
-fluctuation within eating disorder diagnosis.
+ED100K.V3 questionnaire is a self-report, ED assessment based on the Structured Clinical Interview for DSM-5, Eating Disorders[@thorntonAnorexiaNervosaGenetics2018]. Items assess DSM-5 criteria for AN, BN, BED, and other specified feeding and eating disorders (OSFED). The ED100K-V1 was found to be a valid measure of eating disorders and eating disorder behaviors. Positive predictive values for AN Criterion B, Criterion C, and binge eating ranged from 88 to 100% in the validation sample. Among women who had a negative screen, the probability of not having these criteria or behaviors ranged from 72 to 100% in the validation sample. The correlation between questionnaire and interview for lowest illness-related BMI was 0.91. Overall, the questionnaire captures historical: eating disorder diagnosis, eating disorder symptoms, eating disorder course of illness, and diagnostic fluctuation within eating disorder diagnosis.
 
 **Scoring**
 
 Data cleaning steps include:
 
-**1-2.** selects variables; recodes the compensatory exercise variable
-to remove missing codes, and recodes intentional weight control
-variables to remove missing codes and set '0' equal to a 'No/Never'
-answer
+**1-2.** selects variables; recodes the compensatory exercise variable to remove missing codes, and recodes intentional weight control variables to remove missing codes and set '0' equal to a 'No/Never' answer
 
-**3.** overrides skip logic for exercise and other weight control
-variables such that if individuals have an initial 'no' answer where
-skip logic has overridden future questions, a '0' (reflecting a
-'no/never' answer) is entered in the subsequent question regarding
-details of the behavior.
+**3.** overrides skip logic for exercise and other weight control variables such that if individuals have an initial 'no' answer where skip logic has overridden future questions, a '0' (reflecting a 'no/never' answer) is entered in the subsequent question regarding details of the behavior.
 
-**4.** Second recode for these questions such that missing codes are
-change to 'NA' and the '0' answers are labelled appropriately
+**4.** Second recode for these questions such that missing codes are change to 'NA' and the '0' answers are labelled appropriately
 
-**5-7.** specifically calculate logic necessary to specify
-exercise-related outcome variables, described in key variables below.
+**5-7.** specifically calculate logic necessary to specify exercise-related outcome variables, described in key variables below.
 
-**8.** cleans up the dataset by removing erroneous variables that are no
-longer needed.
+**8.** cleans up the dataset by removing erroneous variables that are no longer needed.
 
-After these steps ar complete, additional weight suppression variables
-are calculated and added to the data in the R-script
+After these steps ar complete, additional weight suppression variables are calculated and added to the data in the R-script
 
 **Key variables**
 
@@ -139,34 +92,15 @@ are calculated and added to the data in the R-script
 
 ## Eating Pathology Symptom Inventory
 
-We used the 45-item Eating Pathology Symptom Inventory (EPSI;
-[@forbushDevelopmentValidationEating2013]) to assess eating disorder
-symptoms at pre-intervention, post-intervention, and 8-week follow-up.
-The EPSI has been validated in clinical, college, and community samples,
-with 7-8 subscales in various populations, with the 8-subscale version
-being the most commonly-employed version of the measure
-[@coniglioFactorialIntegrityValidation2018]. The 8 subscales includ:
-Body Dissatisfaction, Binge Eating, Cognitive Restraint, Purging,
-Restricting, Excessive Exercise, Negative Attitudes toward Obesity, and
-Muscle Building. Each item is scored on a 5-point Likert-style scale (0
-= Never; 4= Often) to describe how well each item describes the
-participant experiences. Scores are derived by summing responses across
-the questions included in each subscale.
+We used the 45-item Eating Pathology Symptom Inventory (EPSI; [@forbushDevelopmentValidationEating2013]) to assess eating disorder symptoms at pre-intervention, post-intervention, and 8-week follow-up. The EPSI has been validated in clinical, college, and community samples, with 7-8 subscales in various populations, with the 8-subscale version being the most commonly-employed version of the measure [@coniglioFactorialIntegrityValidation2018]. The 8 subscales includ: Body Dissatisfaction, Binge Eating, Cognitive Restraint, Purging, Restricting, Excessive Exercise, Negative Attitudes toward Obesity, and Muscle Building. Each item is scored on a 5-point Likert-style scale (0 = Never; 4= Often) to describe how well each item describes the participant experiences. Scores are derived by summing responses across the questions included in each subscale.
 
 **Scoring**
 
-Each item is scored on a 5-point Likert-style scale (0 = Never; 4=
-Often) to describe how well each item describes the participant
-experiences. Scores are derived by summing responses across the
-questions included in each subscale. The eight subscales of the measure
-are: Body Dissatisfaction, Binge Eating, Cognitive Restraint, Purging,
-Restricting, Excessive Exercise, Negative Attitudes toward Obesity, and
-Muscle Building.
+Each item is scored on a 5-point Likert-style scale (0 = Never; 4= Often) to describe how well each item describes the participant experiences. Scores are derived by summing responses across the questions included in each subscale. The eight subscales of the measure are: Body Dissatisfaction, Binge Eating, Cognitive Restraint, Purging, Restricting, Excessive Exercise, Negative Attitudes toward Obesity, and Muscle Building.
 
 **Key Variables**
 
-All variables below reflect the final scoring of weighted subscale sum
-scores with \< 25% missing data.
+All variables below reflect the final scoring of weighted subscale sum scores with \< 25% missing data.
 
 `epsi_body_dissatisfaction_25`
 
@@ -186,22 +120,11 @@ scores with \< 25% missing data.
 
 ## Fat Phobia Scale - Short Form
 
-The shortened Fat Phobia Scale (FPS) utilizes 14 questions to assess
-fatphobia (from the 50-item original scale). It is intended to measure
-fat phobia levels in the tested population through various personality
-traits and whether there is bias when people apply them to an overweight
-person (@baconFatPhobiaScale2001). The shortened FPS questionnaire
-demonstrates high reliability when compared to the original 50 question
-scale.
+The shortened Fat Phobia Scale (FPS) utilizes 14 questions to assess fatphobia (from the 50-item original scale). It is intended to measure fat phobia levels in the tested population through various personality traits and whether there is bias when people apply them to an overweight person (@baconFatPhobiaScale2001). The shortened FPS questionnaire demonstrates high reliability when compared to the original 50 question scale.
 
 **Scoring**
 
-The FPS uses a 5-point sliding scale with 1 being equal to a different
-negative descriptive variable for each respective question and 5 being
-equal to a different positive variable for each respective question.
-Some items are reverse scored prior to data aggregation such that th 1
-(negative) to 5 (positive) valuation is maintained across the scale. A
-mean score is created from the 14 items.
+The FPS uses a 5-point sliding scale with 1 being equal to a different negative descriptive variable for each respective question and 5 being equal to a different positive variable for each respective question. Some items are reverse scored prior to data aggregation such that th 1 (negative) to 5 (positive) valuation is maintained across the scale. A mean score is created from the 14 items.
 
 **Key Variables**
 
@@ -209,73 +132,31 @@ mean score is created from the 14 items.
 
 ## USDA Adult Food Security Survey Module (FSSM)
 
-The U.S. Adult Food Security - Survey Module (FSSM)
-[@carlsonMeasuringFoodInsecurity1999] was developed by the USDA Food and
-Nutrition Services in 1995 for assessing food security within
-households, specifically for use in the Current Population Survey. The
-FSSM is primarily designed as a unidimensional, 10-item scale. Previous
-use in college students indicates that students respond differently to
-FSSM items relative to the general population, that the FSSM may be a
-less reliable measure of food insecurity in college students relative to
-other adults in the US population [@nikolausAreEstimatesFood2019], and
-that there is potential for misclassification of FI college students
-[@nikolausFoodInsecurityCollege2020], which is a note of caution when
-interpreting findings from this measure in our young adult sample.
-however, at present, there is no alternative measure of FI amongst
-college students with a more robust track-record of validity.
+The U.S. Adult Food Security - Survey Module (FSSM) [@carlsonMeasuringFoodInsecurity1999] was developed by the USDA Food and Nutrition Services in 1995 for assessing food security within households, specifically for use in the Current Population Survey. The FSSM is primarily designed as a unidimensional, 10-item scale. Previous use in college students indicates that students respond differently to FSSM items relative to the general population, that the FSSM may be a less reliable measure of food insecurity in college students relative to other adults in the US population [@nikolausAreEstimatesFood2019], and that there is potential for misclassification of FI college students [@nikolausFoodInsecurityCollege2020], which is a note of caution when interpreting findings from this measure in our young adult sample. however, at present, there is no alternative measure of FI amongst college students with a more robust track-record of validity.
 
 **Scoring**
 
-Responses of "yes," "often," "sometimes," "almost every month," and
-"some months but not every month" are coded as affirmative. The sum of
-affirmative responses to the 10 questions in the Adult Food Security
-Scale is then the raw score on the scale.
+Responses of "yes," "often," "sometimes," "almost every month," and "some months but not every month" are coded as affirmative. The sum of affirmative responses to the 10 questions in the Adult Food Security Scale is then the raw score on the scale.
 
-Food security status is assigned as follows: \| \| - Raw score 0: High
-food security \| - Raw score 1-2: Marginal food security \| - Raw score
-3-5: Low food security \| - Raw score 6-10: Very low food security \|
-\|When dichotomizing, the food security status of the first two
-categories in combination is described as food secure and the latter two
-as food insecure.
+Food security status is assigned as follows: \| \| - Raw score 0: High food security \| - Raw score 1-2: Marginal food security \| - Raw score 3-5: Low food security \| - Raw score 6-10: Very low food security \| \|When dichotomizing, the food security status of the first two categories in combination is described as food secure and the latter two as food insecure.
 
 **Key Variables**
 
-`fssm_total_25` (sum of 10-item FSSM, those with 25% or less missing -
-weighted by N completed)
+`fssm_total_25` (sum of 10-item FSSM, those with 25% or less missing - weighted by N completed)
 
-`fssm_average_freq_complete` (average of scores measuring how many days
-were impacted by previous questions with yes no scores regarding
-previous 28 days of access and measures taken because of food
-insecurity - completers)
+`fssm_average_freq_complete` (average of scores measuring how many days were impacted by previous questions with yes no scores regarding previous 28 days of access and measures taken because of food insecurity - completers)
 
 ## Generalized Anxiety Disorder 7-item (GAD-7)
 
-Generalized Anxiety Disorder 7-item (GAD-7)
-[@spitzerBriefMeasureAssessing2006] is a seven-item instrument that is
-used to measure or assess the severity of generalised anxiety disorder
-(GAD). Each item asks the individual to rate the severity of his or her
-symptoms over the past two weeks. Response options include "not at all",
-"several days", "more than half the days" and "nearly every day". The
-GAD-7 is a widely-used and well-validated measure for anxiety screening
-[@sapraUsingGeneralizedAnxiety2020]. the GAD-7 is scored on a
-unidimensional scale summing all 7 items, with cutoffs that can also be
-employed for interpretation of clinical severity: \| \| Minimal anxiety
-= 0-4 \| Mild Anxiety = 5-9 \| Moderate Anxiety = 10-14 \| Severe
-Anxiety = 15-21. \| \|
+Generalized Anxiety Disorder 7-item (GAD-7) [@spitzerBriefMeasureAssessing2006] is a seven-item instrument that is used to measure or assess the severity of generalised anxiety disorder (GAD). Each item asks the individual to rate the severity of his or her symptoms over the past two weeks. Response options include "not at all", "several days", "more than half the days" and "nearly every day". The GAD-7 is a widely-used and well-validated measure for anxiety screening [@sapraUsingGeneralizedAnxiety2020]. the GAD-7 is scored on a unidimensional scale summing all 7 items, with cutoffs that can also be employed for interpretation of clinical severity: \| \| Minimal anxiety = 0-4 \| Mild Anxiety = 5-9 \| Moderate Anxiety = 10-14 \| Severe Anxiety = 15-21. \| \|
 
 **Scoring**
 
-The sum of the respondent's answers is used to generate an idea of the
-respondent's anxiety level. A score of 10 points or higher indicates
-probably anxiety disorder, with 89% sensitivity and 82% specificity for
-GAD. We have also created a dichotomized measure of likely anxiety
-(cutoff score of 10 or greater), along with clinical severity index
-(minimal, mild, moderate, severe).
+The sum of the respondent's answers is used to generate an idea of the respondent's anxiety level. A score of 10 points or higher indicates probably anxiety disorder, with 89% sensitivity and 82% specificity for GAD. We have also created a dichotomized measure of likely anxiety (cutoff score of 10 or greater), along with clinical severity index (minimal, mild, moderate, severe).
 
 **Key variables**
 
-`gad_sum_25` (Sum of GAD-7, 25% or less items missing and weighted by N
-items completed)
+`gad_sum_25` (Sum of GAD-7, 25% or less items missing and weighted by N items completed)
 
 `gad_cutoffs` (GAD-7 with anxiety severity cutoffs employed)
 
@@ -283,32 +164,15 @@ items completed)
 
 ## Goldfarb Fear of Fat Scale
 
-The Goldfarb Fear of Fat Scale (GFFS) is a 10-item scale which was
-introduced in 1985 as a diagnostic tool to measure one's fear of fat as
-it can be an indicator for the development of an eating disorder
-[@goldfarbGoldfarbFearFat1985]. When used as a screening tool for both
-clinical and non-clinical groups, GFFS has strong test-retest
-reliability and psychometric properties
-[@przybyta-basistaExaminationFactorStructure2022]. In addition, the test
-also has shown high validity for both populations with and without
-eating disorders (Goldfarb, 2010) While original factor structure is
-defined as a single-factor,
-@przybyta-basistaExaminationFactorStructure2022 also supported a
-two-factor structure in a non-clinical sample: (1) fear of weight gain
-and (2) fear of losing control over eating/weight.
+The Goldfarb Fear of Fat Scale (GFFS) is a 10-item scale which was introduced in 1985 as a diagnostic tool to measure one's fear of fat as it can be an indicator for the development of an eating disorder [@goldfarbGoldfarbFearFat1985]. When used as a screening tool for both clinical and non-clinical groups, GFFS has strong test-retest reliability and psychometric properties [@przybyta-basistaExaminationFactorStructure2022]. In addition, the test also has shown high validity for both populations with and without eating disorders (Goldfarb, 2010) While original factor structure is defined as a single-factor, @przybyta-basistaExaminationFactorStructure2022 also supported a two-factor structure in a non-clinical sample: (1) fear of weight gain and (2) fear of losing control over eating/weight.
 
 **Scoring**
 
-GFFS uses a 4-point scale with 1 being equal to very untrue and 4 being
-equal to very true. The GFFS is scored by summing the items to create a
-total score. The measure also contains two subscales (fear of weight
-gain (FOWG) and loss of control (LOC) which can also be summed.
+GFFS uses a 4-point scale with 1 being equal to very untrue and 4 being equal to very true. The GFFS is scored by summing the items to create a total score. The measure also contains two subscales (fear of weight gain (FOWG) and loss of control (LOC) which can also be summed.
 
 **Key Variables**
 
-For variables below, \_25 appendix reflects that individuals with \<25%
-missing items on a scale were included with weighted sums based on
-number of items completed
+For variables below, \_25 appendix reflects that individuals with \<25% missing items on a scale were included with weighted sums based on number of items completed
 
 `gffs_sum_25` (sum of all items)
 
@@ -317,53 +181,38 @@ number of items completed
 `gffs_loc_25` (sum of loss of control items)
 
 ## Mini Menstrual Questionnaire (MMQ)
-The Mini Menstrual Questionnaire, or MMQ, is a tool that the EMBARK Lab created to assess menstruating individuals’ menstrual history and current menstrual status. This measure asks only three questions: (1) what the participant’s sex assigned at birth is (2) the estimated start date of the participant’s last or current period (3) the number of menstrual cycles the participant has experienced in the past month. 
+
+The Mini Menstrual Questionnaire, or MMQ, is a tool that the EMBARK Lab created to assess menstruating individuals' menstrual history and current menstrual status. This measure assesses the regularity of the individual's menstrual cycles, the form of birth control (if any) the individual uses, if they are pregnant or breastfeeding, and past gynecological procedures they have undergone (if any).
 
 ## Scale of Subjective Social Status (SSSS)
-The MacArthur Scale of Subjective Social Status - Youth Version measures perceived social status among adolescents between 7th and 12th grade (Goodman et al., 2001). The measure includes two ladders: one to assess perceived family status in US American Society and the other to assess perceived personal status within one’s school community. 
 
-**Scoring**
-Each of the two ladders has 10 rungs that the participants can place themselves on. The top rung represents the people who are “best off” in US American society (described as having the most money, highest amount of schooling, and jobs that bring the most respect) in the first ladder and the people in school with the highest status (described as highest grades, standing, and most respect) in the second ladder. Higher scores (with a 10 being the highest) represent higher perceived social status in each setting. 
+The MacArthur Scale of Subjective Social Status - Youth Version measures perceived social status among adolescents between 7th and 12th grade (Goodman et al., 2001). The measure includes two ladders: one to assess perceived family status in US American Society and the other to assess perceived personal status within one's school community.
+
+**Scoring** Each of the two ladders has 10 rungs that the participants can place themselves on. The top rung represents the people who are "best off" in US American society (described as having the most money, highest amount of schooling, and jobs that bring the most respect) in the first ladder and the people in school with the highest status (described as highest grades, standing, and most respect) in the second ladder. Higher scores (with a 10 being the highest) represent higher perceived social status in each setting.
 
 **Key Variables**
 
 ## Beck Depression Inventory (BDI)
-The Beck Depression Inventory (or BDI) is a 21-item, self-report survey that measures characteristic attitudes and symptoms of depression (Beck et al., 1961). Participants are asked to rank each question, which reflects a symptom or attitude related to depression, on a scale from 0 to 3, with zero reflecting the absence of the symptom or attitude and 3 reflecting the most severe experience of the symptom or attitude. For example, one question asks about feelings of being a failure and the options range from “I do not feel like a failure.” to “I feel like I am a complete failure as a person.” 
 
-Scoring is completed by summing the totals of each of the 21 items. A higher score represents higher symptomatology of depression (Beck et al., 1988). Although Beck and colleagues urge clinicians to use their clinical judgement in assigning cut-off scores, typically a score of 10 or lower represents none or minimal depression, 10-18 indicates moderate depression, 19-29 indicates moderate to severe depression, and scores 30 or above indicates severe depression (Beck et al., 1988). 
+The Beck Depression Inventory (or BDI) is a 21-item, self-report survey that measures characteristic attitudes and symptoms of depression (Beck et al., 1961). Participants are asked to rank each question, which reflects a symptom or attitude related to depression, on a scale from 0 to 3, with zero reflecting the absence of the symptom or attitude and 3 reflecting the most severe experience of the symptom or attitude. For example, one question asks about feelings of being a failure and the options range from "I do not feel like a failure." to "I feel like I am a complete failure as a person."
 
-**Scoresheet**
+**Scoring**
+
+Scoring is completed by summing the totals of each of the 21 items. A higher score represents higher symptomatology of depression (Beck et al., 1988). Although Beck and colleagues urge clinicians to use their clinical judgement in assigning cut-off scores, typically a score of 10 or lower represents none or minimal depression, 10-18 indicates moderate depression, 19-29 indicates moderate to severe depression, and scores 30 or above indicates severe depression (Beck et al., 1988).
 
 **Key Variables**
 
 ## Sociocultural Attitudes Towards Appearance Questionnaire (SATAQ)
 
-The Sociocultural Attitudes Towards Appearance Questionnaire-4 (SATAQ)
-is designed to assess societal and interpersonal aspects of appearance
-ideals. The SATAQ has five validated factors: Internalization of
-Thin/Low Body Fat, Internalization of Muscular/Athletic, Pressures from
-Family, Pressures from Media, and Pressures from Peers. This scale
-structure was confirmed in 3 independent and geographically diverse
-samples of women from the United States (East Coast N = 440, West Coast
-N = 304, and North/Midwest N = 349). SATAQ-4 scale scores demonstrated
-excellent reliability and good convergent validity with measures of body
-image, eating disturbance, and self-esteem. The measure was also
-validated in college males from the United States (N = 271); however,
-there was some evidence of an underlying structure unique to men. For
-the purposes of the current data, the 5-factor structure is employed in
-scoring.
+The Sociocultural Attitudes Towards Appearance Questionnaire-4 (SATAQ) is designed to assess societal and interpersonal aspects of appearance ideals. The SATAQ has five validated factors: Internalization of Thin/Low Body Fat, Internalization of Muscular/Athletic, Pressures from Family, Pressures from Media, and Pressures from Peers. This scale structure was confirmed in 3 independent and geographically diverse samples of women from the United States (East Coast N = 440, West Coast N = 304, and North/Midwest N = 349). SATAQ-4 scale scores demonstrated excellent reliability and good convergent validity with measures of body image, eating disturbance, and self-esteem. The measure was also validated in college males from the United States (N = 271); however, there was some evidence of an underlying structure unique to men. For the purposes of the current data, the 5-factor structure is employed in scoring.
 
 **Scoring**
 
-For the SATAQ, a total score is generated based on the mean of the
-respondent's answers. Additionally, subscale scores (internalization of
-thinness/low body fat, internalization of muscular/athletic. pressures -
-family, pressures - peers, and pressures - media) are also calculated.
+For the SATAQ, a total score is generated based on the mean of the respondent's answers. Additionally, subscale scores (internalization of thinness/low body fat, internalization of muscular/athletic. pressures - family, pressures - peers, and pressures - media) are also calculated.
 
 **Key Variables**
 
-Variables with the \_25 appendix indicate that these variables include
-those with 25% or less missing data
+Variables with the \_25 appendix indicate that these variables include those with 25% or less missing data
 
 `sataq_mean_25` (mean of SATAQ)
 
@@ -379,45 +228,34 @@ those with 25% or less missing data
 
 ## Traditional Masculinity-Femininity Scale (TMFS)
 
-The Traditional Masculinity-Femininity Scale (TMFS) which was introduced
-in 2016 to assess self-ascribed masculinity and femininity
-[@kachelTraditionalMasculinityFemininity2016]. The TMFS has demonstrated
-high reliability for both sexes. Additionally, TMFS shows validity due
-to its ability to reduce issues of social desirability when given as a
-self-assessment. TMFS uses a 7-point likert scale with 1 being equal to
-totally masculine and 7 being equal to totally feminine. In terms of
-scoring, the mean is taken of all given answers with an average less
-than 4 implying masculinity and an average greater than 4 implying
-femininity.
+The Traditional Masculinity-Femininity Scale (TMFS) which was introduced in 2016 to assess self-ascribed masculinity and femininity [@kachelTraditionalMasculinityFemininity2016]. The TMFS has demonstrated high reliability for both sexes. Additionally, TMFS shows validity due to its ability to reduce issues of social desirability when given as a self-assessment. TMFS uses a 7-point likert scale with 1 being equal to totally masculine and 7 being equal to totally feminine. In terms of scoring, the mean is taken of all given answers with an average less than 4 implying masculinity and an average greater than 4 implying femininity.
 
 **Scoring**
 
-The mean is taken of all given answers with an average less than 4
-implying masculinity and an average greater than 4 implying femininity.
+The mean is taken of all given answers with an average less than 4 implying masculinity and an average greater than 4 implying femininity.
 
 **Key Variables**
 
-`tmfs_mean_25` (average of scores in response to questions asking about
-different situations where one could consider their femininity and
-masculinity. 25% or less missing data)
+`tmfs_mean_25` (average of scores in response to questions asking about different situations where one could consider their femininity and masculinity. 25% or less missing data)
 
 ## Fat Stereotypes Questionnaire (FSQ)
-Davison and Birch (20014) developed the Fat Stereotype Questionnaire (FSQ) to assess fat stereotypes among 9 year old girls. This scale asks participants to think about attributes such as happiness, intelligence, attractiveness, laziness, having a lot of friends, and goodness/badness in relation to fatness and thinness. 
 
-**Scoring**
-Participants respond to prompts that are descriptors of both “thin” and “fat” people as the subject. They respond using a four-point Likert scale, which ranges from “really disagree” to “really agree,” which produces 18 scores (9 of which are with “fat” subjects and 9 of which are with “thin” subjects). Scoring is completed by calculating discrepancy scores (fat people attribute - thin people attribute) and calculating the mean of the 9 discrepancy scores. Scores above 0 indicate that the participant more strongly endorses that attribute for thin people, whereas scores below 0 indicate that the participant more strongly endorses that attribute for fat people. Importantly, before calculating the mean score, the attributes need to be reverse coded in order to interpret all values in the same direction.  The internal consistency for this measure in Davison and Birch’s (2014) sample was ɑ = 0.71.
+Davison and Birch (20014) developed the Fat Stereotype Questionnaire (FSQ) to assess fat stereotypes among 9 year old girls. This scale asks participants to think about attributes such as happiness, intelligence, attractiveness, laziness, having a lot of friends, and goodness/badness in relation to fatness and thinness.
+
+**Scoring** Participants respond to prompts that are descriptors of both "thin" and "fat" people as the subject. They respond using a four-point Likert scale, which ranges from "really disagree" to "really agree," which produces 18 scores (9 of which are with "fat" subjects and 9 of which are with "thin" subjects). Scoring is completed by calculating discrepancy scores (fat people attribute - thin people attribute) and calculating the mean of the 9 discrepancy scores. Scores above 0 indicate that the participant more strongly endorses that attribute for thin people, whereas scores below 0 indicate that the participant more strongly endorses that attribute for fat people. Importantly, before calculating the mean score, the attributes need to be reverse coded in order to interpret all values in the same direction. The internal consistency for this measure in Davison and Birch's (2014) sample was ɑ = 0.71.
 
 **Key Variables**
 
 ## Perception of Teasing Scale (POTS)
-The Perception of Teasing Scale (also known as POTS) was developed by Thompson et al. (1995) to assess children and adolescents’ history of being teased in relationship to a high-weight status. [THIS IS WHERE OUR CONFUSION LIES, SINCE WE HAVE NINE QUESTIONS- SEE MESSAGE FROM ME :)] This is a 6-item survey that is scored on a 5-point Likert scale (Fields et al., 2021). The scale ranges from “never” to “always,” with “always” occupying the number five.This measure has an internal consistency of ɑ=.88. 
 
- In order to Score the POTS, all six scores are totaled. Therefore, higher scores indicate more significant experiences of teasing or stigma from peers (Fields et al., 2021).
+The Perception of Teasing Scale (also known as POTS) was developed by Thompson et al. (1995) to assess children and adolescents' history of being teased in relationship to a high-weight status and social competency. López-Guimerà et al. (2012) validated an 11-item version of POTS with Spanish adolescents. The measure contains two subscales: weight-related teasing and competency-related teasing. Both subscales have a satisfactory level of internal consistency. A response-to-teasing is also assessed by asking the participant if they experienced any emotional distress due to the teasing they experienced.
 
 **Scoring**
+
+The teasing scale ranges from "never" to "always," with "always" occupying the number five. The upset scale is also on a 5-point Likert scale from "not upset" to "very upset". The final teasing score is generated by generating a sum of the score for all of the teasing items. A separate score for emotional distress is calculated by creating a sum for all of the repsonse-to-teasing items.
 
 **Key Variables**
 
 ## Feedback Survey
 
-The feedback survey is a lab-created 15-question survey that asks questions about the participants’ experiences participating in BAM High. This survey asks participants to reflect on their experiences participating and evaluate the program in terms of facilitator strength, helpfulness, level of distress related to the intervention, and more. There are some items that ask for a “yes” or “no” answer, while others provide space for open comment. 
+The feedback survey is a lab-created 15-question survey that asks questions about the participants' experiences participating in BAM High. This survey asks participants to reflect on their experiences participating and evaluate the program in terms of facilitator strength, helpfulness, level of distress related to the intervention, and more. There are some items that ask for a "yes" or "no" answer, while others provide space for open comment.
