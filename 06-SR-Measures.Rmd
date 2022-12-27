@@ -328,6 +328,9 @@ Each of the two ladders has 10 rungs that the participants can place themselves 
 **Key Variables**
 
 ## Beck Depression Inventory (BDI)
+The Beck Depression Inventory (or BDI) is a 21-item, self-report survey that measures characteristic attitudes and symptoms of depression (Beck et al., 1961). Participants are asked to rank each question, which reflects a symptom or attitude related to depression, on a scale from 0 to 3, with zero reflecting the absence of the symptom or attitude and 3 reflecting the most severe experience of the symptom or attitude. For example, one question asks about feelings of being a failure and the options range from “I do not feel like a failure.” to “I feel like I am a complete failure as a person.” 
+
+Scoring is completed by summing the totals of each of the 21 items. A higher score represents higher symptomatology of depression (Beck et al., 1988). Although Beck and colleagues urge clinicians to use their clinical judgement in assigning cut-off scores, typically a score of 10 or lower represents none or minimal depression, 10-18 indicates moderate depression, 19-29 indicates moderate to severe depression, and scores 30 or above indicates severe depression (Beck et al., 1988). 
 
 **Scoresheet**
 
