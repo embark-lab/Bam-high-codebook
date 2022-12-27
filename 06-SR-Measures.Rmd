@@ -410,6 +410,9 @@ Participants respond to prompts that are descriptors of both “thin” and “f
 **Key Variables**
 
 ## Perception of Teasing Scale (POTS)
+The Perception of Teasing Scale (also known as POTS) was developed by Thompson et al. (1995) to assess children and adolescents’ history of being teased in relationship to a high-weight status. [THIS IS WHERE OUR CONFUSION LIES, SINCE WE HAVE NINE QUESTIONS- SEE MESSAGE FROM ME :)] This is a 6-item survey that is scored on a 5-point Likert scale (Fields et al., 2021). The scale ranges from “never” to “always,” with “always” occupying the number five.This measure has an internal consistency of ɑ=.88. 
+
+ In order to Score the POTS, all six scores are totaled. Therefore, higher scores indicate more significant experiences of teasing or stigma from peers (Fields et al., 2021).
 
 **Scoring**
 
