@@ -3,7 +3,4 @@ For this study, we are recruiting a sample of 14-18 year olds who are currently 
 
 [ONCE WE HAVE A SAMPLE WE CAN INCLUDE CORRECT FIGURES HERE]
 
-```{r pilot, fig.cap="Pilot Sample 2021", out.width='98%', echo = F}
-knitr::include_graphics('figs/figure.png')
-```
 
