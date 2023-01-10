@@ -92,7 +92,7 @@ After these steps ar complete, additional weight suppression variables are calcu
 
 ## Eating Pathology Symptom Inventory
 
-We used the 45-item Eating Pathology Symptom Inventory (EPSI; [@forbushDevelopmentValidationEating2013]) to assess eating disorder symptoms at pre-intervention, post-intervention, and 8-week follow-up. The EPSI has been validated in clinical, college, and community samples, with 7-8 subscales in various populations, with the 8-subscale version being the most commonly-employed version of the measure [@coniglioFactorialIntegrityValidation2018]. The 8 subscales includ: Body Dissatisfaction, Binge Eating, Cognitive Restraint, Purging, Restricting, Excessive Exercise, Negative Attitudes toward Obesity, and Muscle Building. Each item is scored on a 5-point Likert-style scale (0 = Never; 4= Often) to describe how well each item describes the participant experiences. Scores are derived by summing responses across the questions included in each subscale.
+We used the 45-item Eating Pathology Symptom Inventory (EPSI; [@forbushDevelopmentValidationEating2013]) to assess eating disorder symptoms at pre-intervention, post-intervention, and 4-week follow-up. The EPSI has been validated in clinical, college, and community samples, with 7-8 subscales in various populations, with the 8-subscale version being the most commonly-employed version of the measure [@coniglioFactorialIntegrityValidation2018]. The 8 subscales include: Body Dissatisfaction, Binge Eating, Cognitive Restraint, Purging, Restricting, Excessive Exercise, Negative Attitudes toward Obesity, and Muscle Building.
 
 **Scoring**
 
@@ -130,21 +130,18 @@ The FPS uses a 5-point sliding scale with 1 being equal to a different negative 
 
 `fps_mean` (Mean score of all 14 items)
 
-## USDA Adult Food Security Survey Module (FSSM)
+## Child Food Security Survey Module (FSSM)
 
-The U.S. Adult Food Security - Survey Module (FSSM) [@carlsonMeasuringFoodInsecurity1999] was developed by the USDA Food and Nutrition Services in 1995 for assessing food security within households, specifically for use in the Current Population Survey. The FSSM is primarily designed as a unidimensional, 10-item scale. Previous use in college students indicates that students respond differently to FSSM items relative to the general population, that the FSSM may be a less reliable measure of food insecurity in college students relative to other adults in the US population [@nikolausAreEstimatesFood2019], and that there is potential for misclassification of FI college students [@nikolausFoodInsecurityCollege2020], which is a note of caution when interpreting findings from this measure in our young adult sample. however, at present, there is no alternative measure of FI amongst college students with a more robust track-record of validity.
+The U.S. Adult Food Security - Survey Module (US FSSM) [@carlsonMeasuringFoodInsecurity1999] was developed by the USDA Food and Nutrition Services in 1995 for assessing food security within households, specifically for use in the Current Population Survey. The US FSSM was adapted for administration with children, creating the Child FSSM (CFSSM), which is a 9-item survey that demonstrates sufficient reliability in measuring food insecurity [@connellFoodSecurityOlder2004].
 
 **Scoring**
 
-Responses of "yes," "often," "sometimes," "almost every month," and "some months but not every month" are coded as affirmative. The sum of affirmative responses to the 10 questions in the Adult Food Security Scale is then the raw score on the scale.
+Respondents had to answer the 9 items with either "A lot", "Sometimes", or "Never". Responses "A lot" and "Sometimes" were dichotomous as affirmative while "Never" remained negative. The sum of affirmative responses to the 9 questions is then the raw score on the scale.
 
-Food security status is assigned as follows: \| \| - Raw score 0: High food security \| - Raw score 1-2: Marginal food security \| - Raw score 3-5: Low food security \| - Raw score 6-10: Very low food security \| \|When dichotomizing, the food security status of the first two categories in combination is described as food secure and the latter two as food insecure.
+Food security status is assigned as follows: \| \| - Raw score 0-1: Food secure \| - Raw score 2-5: Food insecure without hunger \| - Raw score 6+: Food insecure with hunger \| \|
 
 **Key Variables**
 
-`fssm_total_25` (sum of 10-item FSSM, those with 25% or less missing - weighted by N completed)
-
-`fssm_average_freq_complete` (average of scores measuring how many days were impacted by previous questions with yes no scores regarding previous 28 days of access and measures taken because of food insecurity - completers)
 
 ## Generalized Anxiety Disorder 7-item (GAD-7)
 
