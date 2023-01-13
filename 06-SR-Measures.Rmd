@@ -42,9 +42,9 @@ Demographics are primarily drawn from the data collection form (measure prefix '
 
 `assessment_month` (assessment recoded to assessment month and year)
 
-## ED100k
+## ED100k Plus
 
-ED100K.V3 questionnaire is a self-report, ED assessment based on the Structured Clinical Interview for DSM-5, Eating Disorders[@thorntonAnorexiaNervosaGenetics2018]. Items assess DSM-5 criteria for AN, BN, BED, and other specified feeding and eating disorders (OSFED). The ED100K-V1 was found to be a valid measure of eating disorders and eating disorder behaviors. Positive predictive values for AN Criterion B, Criterion C, and binge eating ranged from 88 to 100% in the validation sample. Among women who had a negative screen, the probability of not having these criteria or behaviors ranged from 72 to 100% in the validation sample. The correlation between questionnaire and interview for lowest illness-related BMI was 0.91. Overall, the questionnaire captures historical: eating disorder diagnosis, eating disorder symptoms, eating disorder course of illness, and diagnostic fluctuation within eating disorder diagnosis.
+The ED100k Plus is a survey that compiles questions from validated measures of dieting and disordered eating including the ED100k [@thorntonAnorexiaNervosaGenetics2018], Eating Disorder Diagnostic Scale (EDDS; [@sticeEatingDisorderDiagnostic2004]), Eating Disorder Examination Questionnaire (EDE-Q; [@luceReliabilityEatingDisorder1999]), and the Dieting and Weight History Questionnaire (DWHQ; [@wittAssessingThreeTypes2013]) to provide a more comprehensive assessment of past and current symptoms of disordered eating. The survey begins by addressing weight suppression, lowest adult weight, and dieting history. The survey then addresses eating disorder behaviors and cognitions in both a past and present sense. The final questions of the ED100k Plus address menstrual information for female participants.
 
 **Scoring**
 
@@ -130,7 +130,7 @@ The FPS uses a 5-point sliding scale with 1 being equal to a different negative 
 
 `fps_mean` (Mean score of all 14 items)
 
-## Child Food Security Survey Module (FSSM)
+## Child Food Security Survey Module (CFSSM)
 
 The U.S. Adult Food Security - Survey Module (US FSSM) [@carlsonMeasuringFoodInsecurity1999] was developed by the USDA Food and Nutrition Services in 1995 for assessing food security within households, specifically for use in the Current Population Survey. The US FSSM was adapted for administration with children, creating the Child FSSM (CFSSM), which is a 9-item survey that demonstrates sufficient reliability in measuring food insecurity [@connellFoodSecurityOlder2004].
 
