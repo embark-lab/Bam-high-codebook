@@ -183,7 +183,7 @@ The Mini Menstrual Questionnaire, or MMQ, is a tool that the EMBARK Lab created 
 
 ## Scale of Subjective Social Status (SSSS)
 
-The MacArthur Scale of Subjective Social Status - Youth Version measures perceived social status among adolescents between 7th and 12th grade (Goodman et al., 2001). The measure includes two ladders: one to assess perceived family status in US American Society and the other to assess perceived personal status within one's school community.
+The MacArthur Scale of Subjective Social Status - Youth Version measures perceived social status among adolescents between 7th and 12th grade [@goodmanAdolescentsPerceptionsSocial2001]. The measure includes two ladders: one to assess perceived family status in US American Society and the other to assess perceived personal status within one's school community.
 
 **Scoring** Each of the two ladders has 10 rungs that the participants can place themselves on. The top rung represents the people who are "best off" in US American society (described as having the most money, highest amount of schooling, and jobs that bring the most respect) in the first ladder and the people in school with the highest status (described as highest grades, standing, and most respect) in the second ladder. Higher scores (with a 10 being the highest) represent higher perceived social status in each setting.
 
@@ -191,7 +191,7 @@ The MacArthur Scale of Subjective Social Status - Youth Version measures perceiv
 
 ## Beck Depression Inventory (BDI)
 
-The Beck Depression Inventory (or BDI) is a 21-item, self-report survey that measures characteristic attitudes and symptoms of depression (Beck et al., 1961). Participants are asked to rank each question, which reflects a symptom or attitude related to depression, on a scale from 0 to 3, with zero reflecting the absence of the symptom or attitude and 3 reflecting the most severe experience of the symptom or attitude. For example, one question asks about feelings of being a failure and the options range from "I do not feel like a failure." to "I feel like I am a complete failure as a person."
+The Beck Depression Inventory (or BDI) is a 21-item, self-report survey that measures characteristic attitudes and symptoms of depression [@beckInventoryMeasuringDepression1961]. Participants are asked to rank each question, which reflects a symptom or attitude related to depression, on a scale from 0 to 3, with zero reflecting the absence of the symptom or attitude and 3 reflecting the most severe experience of the symptom or attitude. For example, one question asks about feelings of being a failure and the options range from "I do not feel like a failure." to "I feel like I am a complete failure as a person."
 
 **Scoring**
 
@@ -237,7 +237,7 @@ The mean is taken of all given answers with an average less than 4 implying masc
 
 ## Fat Stereotypes Questionnaire (FSQ)
 
-Davison and Birch (20014) developed the Fat Stereotype Questionnaire (FSQ) to assess fat stereotypes among 9 year old girls. This scale asks participants to think about attributes such as happiness, intelligence, attractiveness, laziness, having a lot of friends, and goodness/badness in relation to fatness and thinness.
+Davison and Birch [@davisonPredictorsFatStereotypes2004] developed the Fat Stereotype Questionnaire (FSQ) to assess fat stereotypes among 9 year old girls. This scale asks participants to think about attributes such as happiness, intelligence, attractiveness, laziness, having a lot of friends, and goodness/badness in relation to fatness and thinness.
 
 **Scoring** Participants respond to prompts that are descriptors of both "thin" and "fat" people as the subject. They respond using a four-point Likert scale, which ranges from "really disagree" to "really agree," which produces 18 scores (9 of which are with "fat" subjects and 9 of which are with "thin" subjects). Scoring is completed by calculating discrepancy scores (fat people attribute - thin people attribute) and calculating the mean of the 9 discrepancy scores. Scores above 0 indicate that the participant more strongly endorses that attribute for thin people, whereas scores below 0 indicate that the participant more strongly endorses that attribute for fat people. Importantly, before calculating the mean score, the attributes need to be reverse coded in order to interpret all values in the same direction. The internal consistency for this measure in Davison and Birch's (2014) sample was ɑ = 0.71.
 
@@ -245,7 +245,7 @@ Davison and Birch (20014) developed the Fat Stereotype Questionnaire (FSQ) to as
 
 ## Perception of Teasing Scale (POTS)
 
-The Perception of Teasing Scale (also known as POTS) was developed by Thompson et al. (1995) to assess children and adolescents' history of being teased in relationship to a high-weight status and social competency. López-Guimerà et al. (2012) validated an 11-item version of POTS with Spanish adolescents. The measure contains two subscales: weight-related teasing and competency-related teasing. Both subscales have a satisfactory level of internal consistency. A response-to-teasing is also assessed by asking the participant if they experienced any emotional distress due to the teasing they experienced.
+The Perception of Teasing Scale (also known as POTS) was developed by Thompson et al.[@thompsonDevelopmentBodyImage1995] to assess children and adolescents' history of being teased in relationship to a high-weight status and social competency. López-Guimerà et al. [@lopez-guimeraPsychometricPropertiesPerception2012] validated an 11-item version of POTS with Spanish adolescents. The measure contains two subscales: weight-related teasing and competency-related teasing. Both subscales have a satisfactory level of internal consistency. A response-to-teasing is also assessed by asking the participant if they experienced any emotional distress due to the teasing they experienced.
 
 **Scoring**
 
