@@ -1,7 +1,5 @@
 study-premise
 specific-aims
-study-premise-1
-specific-aims-1
 procedures
 recruitment
 intervention
