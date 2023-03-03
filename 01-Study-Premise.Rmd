@@ -7,3 +7,7 @@ While existing, dissonance programs (i.e. the Body Project) target reductions in
 This project aims to recruit 30 high school students (ages 14-18) to all participate in the BAM High intervention. Our objective is to examine the degree to which BAM can reduce fear of fatness and weight gain along with internalized anti-fat bias and reduce risk and development ED symptoms in a late adolescent sample. We will evaluate feasibility and acceptability of BAM High and estimate effects of the intervention on self-report and behavioral measures of fear of weight gain and fatness, anti-fat bias, and eating disorder symptoms.
 
 ## Specific Aims
+
+Aim 1: Examine the acceptability and feasibility of BAM in a high-risk young adult sample. Acceptability: Acceptability will be assessed via attrition across a 4-session intervention along with qualitative feedback from a brief survey at post-intervention. We expect to meet benchmarks of high acceptability (average ratings of > 4 [out of 5] on post-intervention survey; < 20% attrition). Feasibility: Feasibility will be benchmarked via intervention adherence (average competency > 8.0 on 0-10 scale) and recruitment goals.
+
+Aim 2: Estimate the effects of the intervention on fear of fatness, anti-fat bias, and eating disorder symptoms. We hypothesize that the BAM intervention will result in acute reductions (post-intervention) in fatphobia and anti-fat bias across self—report and behavioral measures, outperforming the Body Project on targets related to anti-fat bias, specifically.

@@ -1,6 +1,7 @@
-fig:pilot
 study-premise
 specific-aims
+study-premise-1
+specific-aims-1
 procedures
 recruitment
 intervention
@@ -13,10 +14,10 @@ intervention-fidelity
 assessment-schedule
 self-report-measures
 demographics
-ed100k
+ed100k-plus
 eating-pathology-symptom-inventory
 fat-phobia-scale---short-form
-usda-adult-food-security-survey-module-fssm
+child-food-security-survey-module-cfssm
 generalized-anxiety-disorder-7-item-gad-7
 goldfarb-fear-of-fat-scale
 mini-menstrual-questionnaire-mmq
@@ -39,3 +40,4 @@ drift-diffusion-modeling
 key-variables-1
 sample-description
 data-requests-and-terms-of-use
+analytic-plan
