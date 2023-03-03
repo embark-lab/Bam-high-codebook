@@ -120,7 +120,7 @@ All variables below reflect the final scoring of weighted subscale sum scores wi
 
 ## Fat Phobia Scale - Short Form
 
-The shortened Fat Phobia Scale (FPS) utilizes 14 questions to assess fatphobia (from the 50-item original scale). It is intended to measure fat phobia levels in the tested population through various personality traits and whether there is bias when people apply them to an overweight person (@baconFatPhobiaScale2001). The shortened FPS questionnaire demonstrates high reliability when compared to the original 50 question scale.
+The shortened Fat Phobia Scale (FPS) utilizes 14 questions to assess fatphobia (from the 50-item original scale). It is intended to measure fat phobia levels in the tested population through various personality traits and whether there is bias when people apply them to an overweight person [@baconFatPhobiaScale2001]. The shortened FPS questionnaire demonstrates high reliability when compared to the original 50 question scale.
 
 **Scoring**
 
